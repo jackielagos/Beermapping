@@ -1,0 +1,105 @@
+/* Jackie's CSS */
+
+body {
+
+    background-image: url(../images/secondback.jpg);
+    background-size: cover;
+    padding: 0px;
+    height: 100%; 
+    background-position: center;
+    background-repeat: repeat; 
+}
+
+.navbar {
+    font-family: 'Lobster', cursive;
+    background: transparent;
+    background-size: cover;
+}
+
+h2{
+    float:left;
+    position: left;
+}
+
+.row {
+
+    padding-top: 2%;
+    padding-left: 5%;  
+}
+
+#location-form{
+    
+    float: right;
+    padding-top: 30px;
+    text-align: right;
+    padding-right: 18px;
+    font-size:1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    padding-left:20px;
+    position: left;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    transform: rotate(-15deg);
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color:black;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+
+
+/* Scrollbar CSS written as per Scrollbar JS library (Please do not change) */
+
+#location-container {
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+    width: 420px;
+    height: 650px;
+    overflow: auto;
+}
+
+
+#location-div {
+    width: 400px;
+    background-color: #FFBF00;
+    opacity: .6;
+    font: arial;
+    color: black;
+    font-weight: bold;
+}
+
+#map-container {
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+    width: 700px;
+    height: 650px;
+    overflow: auto;
+}
+
+#map {
+    width: 800px;
+    height: 680px;
+}
+
+
+
+
+
+

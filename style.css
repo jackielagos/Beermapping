@@ -1,0 +1,96 @@
+
+/* Kamelia's CSS */
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    
+    padding: 0px;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    } 
+    
+    #menu {
+        z-index: 1000;
+        position: relative;
+        width: 100%;
+        top: 0.8em;
+    }
+    
+    #navbarToggleExternalContent{
+        width: 90%;
+    }
+    
+    .about-us {
+        font-family: 'Lobster', cursive;
+    }
+    
+    .jumbotron {
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        background: none;
+        background-size: cover;
+        display: inline-block;
+        -webkit-transform: scale(1.5,1);
+        padding-top: -5em;
+    }
+    
+    h1 {
+        padding-right: 1.15em;
+        position: relative;
+        bottom: 0.6em;
+        left: 0.35em;
+    }
+    
+    .display-1 {
+        transform: rotate(-18deg);
+        font-size: 12em;
+        font-stretch: expanded;
+    }
+    
+    form {
+      font-family: 'Lobster', cursive;
+    }
+    
+    .form-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    #location-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 8.75em;
+    }
+    
+    #location {
+        position: relative;
+        right: 5.5em;
+        top: 1.5em;
+        font-size: 2.2em;
+        font-weight: bolder;
+    }
+      
+    #location-input {
+        width: 15em;
+        height: 3em;
+    }
+    
+    #select-location {
+        position: relative;
+        left: 10em;
+        bottom: 4em;
+        width: 3em;
+        height: 2em;
+        /* font-size: 1em; */
+        font-weight: bold;
+    }

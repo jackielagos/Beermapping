@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beerz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- script for special bootstrap navbar need to be on top -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+</head>
+
+<body>
+  <div class="pos-f-t" id="menu">
+    <nav class="navbar navbar-dark">
+      <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-1">
+          <h4 class="text-black about-us">Welcome Beer Lover! Enter a location in the search box and find breweries, brewpubs and pubs in the area!</h4>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="display-1">Beerz</h1>
+    </div>
+    <form id="location-form">
+      <!-- Label for Text Box -->
+      <label id="location" for="location-input">Location</label>
+      <!-- Text Input Box -->
+      <input type="text" id="location-input" placeholder="e.g. Waterloo,ON">
+      <br>
+      <!-- Submit Button -->
+      <input id="select-location" type="submit" value="GO!">
+    </form>
+  </div>
+  <!-- container div close-->
+</body>
+
+
+<!-- Link in jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Link in JavaScript -->
+<script src="assets/javascript/app.js"></script>
+
+
+<!-- jQuery to save input location to URL and load index2.html -->
+<script>
+  $("#select-location").on("click", function (event) {
+    // Preventing the button from trying to submit the form
+    event.preventDefault();
+    // Storing the location name
+    var inputLocation = $("#location-input").val().trim();
+    var queryString = location.replace("index2.html?=" + inputLocation)
+    console.log(queryString);
+  });
+</script>
+
+
+</html>
+
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0AunWnlISw3kBaDRAzQ0AWur95GfZUWQ&callback=initMap"
+  type="text/javascript"></script> -->
+<!-- Group API key: AIzaSyB0ePYPVkFl-ctOfTgJSJHbi7dLFCUBuAw -->
+<!-- e's API key: AIzaSyB0AunWnlISw3kBaDRAzQ0AWur95GfZUWQ -->
